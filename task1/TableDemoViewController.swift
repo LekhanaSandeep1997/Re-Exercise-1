@@ -90,6 +90,12 @@ class TableDemoViewController: UIViewController {
             return 130
         }
         
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+            let vc = MovieDetailsViewController()
+            vc.selectedMovie = movies[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
     }
 
 class MyCellView : UITableViewCell{
