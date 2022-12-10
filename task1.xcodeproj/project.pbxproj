@@ -23,6 +23,8 @@
 		5B58DADC291F969800A4E59B /* RickandMothyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58DADB291F969800A4E59B /* RickandMothyViewController.swift */; };
 		5B5D1F4C29163BA10072CF22 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D1F4B29163BA10072CF22 /* MoviesModel.swift */; };
 		5B5D1F4F29165E520072CF22 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5B5D1F4E29165E520072CF22 /* Kingfisher */; };
+		5BE86D7E2944544F00E205E2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE86D7D2944544F00E205E2 /* MainViewController.swift */; };
+		5BE86D802944574200E205E2 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE86D7F2944574200E205E2 /* SubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		5B58DAD9291F95A500A4E59B /* RickandMothyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickandMothyData.swift; sourceTree = "<group>"; };
 		5B58DADB291F969800A4E59B /* RickandMothyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickandMothyViewController.swift; sourceTree = "<group>"; };
 		5B5D1F4B29163BA10072CF22 /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
+		5BE86D7D2944544F00E205E2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5BE86D7F2944574200E205E2 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 				5B58DAD7291F724700A4E59B /* MovieDetailsViewController.swift */,
 				5B58DAD9291F95A500A4E59B /* RickandMothyData.swift */,
 				5B58DADB291F969800A4E59B /* RickandMothyViewController.swift */,
+				5BE86D7D2944544F00E205E2 /* MainViewController.swift */,
+				5BE86D7F2944574200E205E2 /* SubViewController.swift */,
 			);
 			path = task1;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 			files = (
 				5B58DADC291F969800A4E59B /* RickandMothyViewController.swift in Sources */,
 				5B58DADA291F95A600A4E59B /* RickandMothyData.swift in Sources */,
+				5BE86D802944574200E205E2 /* SubViewController.swift in Sources */,
 				5B092CFF290CF4E000BE1F1D /* ViewController.swift in Sources */,
 				5B092CFB290CF4E000BE1F1D /* AppDelegate.swift in Sources */,
 				5B5D1F4C29163BA10072CF22 /* MoviesModel.swift in Sources */,
@@ -293,6 +300,7 @@
 				5B092CFD290CF4E000BE1F1D /* SceneDelegate.swift in Sources */,
 				5B092D2E290CF74000BE1F1D /* DetailViewController.swift in Sources */,
 				5B092D30290CFEBA00BE1F1D /* TableDemoViewController.swift in Sources */,
+				5BE86D7E2944544F00E205E2 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
