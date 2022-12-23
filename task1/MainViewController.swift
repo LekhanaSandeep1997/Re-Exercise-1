@@ -15,6 +15,8 @@ class MainViewController: UIViewController {
         btn.setTitle("Go to Next", for: .normal)
         return btn
     }()
+    
+    let vc = SubViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +25,14 @@ class MainViewController: UIViewController {
         
         button.addTarget(self, action: #selector(getNextAction), for: .touchUpInside)
 //        button.titleLabel?.textColor = .red
+        vc.delegate = self
         
     }
     
     //objective c function ( if we use #selector for data transfer we should
     //use objc
     @objc func getNextAction(){
-        navigationController?.pushViewController(SubViewController(), animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func setupUI(){
@@ -43,4 +46,10 @@ class MainViewController: UIViewController {
     }
     
 
+}
+
+extension MainViewController : UpdateTextDelegate{
+    func updateText(text: String) {
+        print(text)
+    }
 }

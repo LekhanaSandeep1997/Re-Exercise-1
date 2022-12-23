@@ -6,6 +6,12 @@
 //
 
 import UIKit
+import SnapKit
+
+//imported for logins setup in cw
+protocol UpdateTextDelegate{
+    func updateText(text : String)
+}
 
 class SubViewController: UIViewController {
     
@@ -14,6 +20,8 @@ class SubViewController: UIViewController {
         text.borderStyle = .roundedRect
         return text
     }()
+    
+    var delegate : UpdateTextDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +31,16 @@ class SubViewController: UIViewController {
         self.view.addSubview(textField)
         
         setupUI()
+        
+        
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+        super.viewDidDisappear(animated)
+        delegate?.updateText(text: textField.text ?? "")
+    }
+
     
     func setupUI(){
         textField.snp.makeConstraints {make in
